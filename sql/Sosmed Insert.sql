@@ -1,0 +1,83 @@
+INSERT INTO Activity
+  (ID, 
+  PeopleID, 
+  text, 
+  created_at, 
+  created_by, 
+  updated_at, 
+  updated_by, 
+  is_active, 
+  likes) 
+VALUES 
+  (?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?);
+INSERT INTO Activity_People
+  (ActivityID, 
+  PeopleID) 
+VALUES 
+  (?, 
+  ?);
+INSERT INTO Comment
+  (ID, 
+  ActivityID, 
+  PeopleID, 
+  text, 
+  is_active, 
+  created_at, 
+  created_by, 
+  updated_at, 
+  updated_by) 
+VALUES 
+  (?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?);
+INSERT INTO Friends
+  (PeopleID, 
+  PeopleID2) 
+VALUES 
+  (?, 
+  ?);
+INSERT INTO People
+  (ID, 
+  first_name, 
+  last_name, 
+  birth_date, 
+  address, 
+  email, 
+  password, 
+  created_at, 
+  created_by, 
+  updated_at, 
+  updated_by, 
+  is_active, 
+  image_profile, 
+  image_background) 
+VALUES 
+  (?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?, 
+  ?);
+
